@@ -1,0 +1,29 @@
+:local(.bodyCopy) {
+
+    position: relative;
+    width: 80%;
+    height: auto;
+    left: 10%;
+    top: auto;
+    bottom: 10%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+
+    text-align: justify;
+    text-justify: auto;
+
+    color: #000000;
+
+}
+
+:local(.h1Copy) {
+
+    text-align: left;
+    padding: 2em
+
+}

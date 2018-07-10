@@ -16,15 +16,15 @@ function SimpleAppBar(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="inherited" align="center">
+      <AppBar position="static" color="inherit" align="center">
         <Toolbar>
-          <SimpleMenu />
           <Typography className={classes.root} variant="title" color="inherit">
             FKJ Consultancy
           </Typography>
           <Button href="/home" color="inherit">
             <HomeIcon />
           </Button>
+          <SimpleMenu />
         </Toolbar>
       </AppBar>
     </div>
