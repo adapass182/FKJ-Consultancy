@@ -25,7 +25,7 @@ class Contact extends React.Component {
             <Grid container className={classes.root} spacing={0}>
               <Grid item xs={12}>
                 <Grid container className={classes.homePage} justify="center" spacing={0}>
-                  {[0, 1, 2].map(value => (
+                  {[0, 1].map(value => (
                     <Grid key={value} item>
                       <Paper className={classes.paper}>
                         Contact Fiona
