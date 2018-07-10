@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { AppBar, Button, Toolbar, Typography, withStyles } from '@material-ui/core'
 import HomeIcon from '@material-ui/icons/Home'
+import {Link} from 'react-router-dom'
 
 import SimpleMenu from './Menu'
 
@@ -21,7 +22,7 @@ function SimpleAppBar(props) {
           <Typography className={classes.root} variant="title" color="inherit">
             FKJ Consultancy
           </Typography>
-          <Button href="/home" color="inherit">
+          <Button component={Link} to="/home" color="inherit">
             <HomeIcon />
           </Button>
           <SimpleMenu />
