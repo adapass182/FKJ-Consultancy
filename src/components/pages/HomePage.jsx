@@ -4,22 +4,27 @@ import PropTypes from 'prop-types'
 import { Grid, Paper, withStyles } from '@material-ui/core'
 import {lorem} from '../../loremIpsum'
 import redbck from '../redbck.jpg'
+import profile from '../profile.jpg'
 
 const styles = {
   root: {
     flexGrow: 1,
     position: "sticky",
-    marginTop: "4em",
-    marginBottom: "3em",
-    backgroundImage: `url(${redbck})`
+    marginTop: "3.5em",
+    marginBottom: "2em",
+    backgroundImage: `url(${redbck})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover"
   },
   paper: {
-    padding: "1em",
-    margin: "1em",
+    flexGrow: 1,
+    margin: "2em",
     height: "auto",
     width: "auto",
-    fontFamily: "Aladdin"
-  },
+    fontFamily: "Aladdin",
+    background: "transparent"
+  }
 }
 
 class HomePage extends React.Component {
@@ -30,14 +35,10 @@ class HomePage extends React.Component {
       return (
             <Grid container className={classes.root} spacing={0}>
               <Grid item xs={12}>
-                <Grid container justify="center" spacing={0}>
-                  {[0, 1, 2, 3, 4, 5, 6].map(value => (
-                    <Grid key={value} item>
-                      <Paper className={classes.paper}>
-                        {lorem}
-                      </Paper>
+                <Grid container spacing={0}>
+                    <Grid key={"profile-img"} item className={classes.paper}>
+                        {<img src={profile} title="fiona-profile" />}
                     </Grid>
-                  ))}
                 </Grid>
               </Grid>
             </Grid>

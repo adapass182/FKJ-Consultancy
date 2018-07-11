@@ -13,10 +13,14 @@ const footStyle = {
     left: "0",
     bottom: "0",
     width: "100%",
+    height: "2em",
     textAlign: "center",
     background: "white",
     position: "fixed",
-    backgroundImage: `url(${redbck})`
+    backgroundImage: `url(${redbck})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover"
   },
 
   icon: {
