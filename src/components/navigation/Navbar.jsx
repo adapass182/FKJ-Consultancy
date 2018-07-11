@@ -4,13 +4,14 @@ import { AppBar, Button, Grid, Image, Toolbar, Typography, withStyles } from '@m
 import HomeIcon from '@material-ui/icons/Home'
 import {Link} from 'react-router-dom'
 import BackgroundImage from '../Rectangle.png'
-
 import SimpleMenu from './Menu'
+
 
 const styles = {
   root: {
     flexGrow: 1,
-    textAlign: "left"
+    textAlign: "left",
+    fontFamily: 'Aladdin'
   },
   appImg: {
     backgroundImage: BackgroundImage
