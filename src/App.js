@@ -10,12 +10,13 @@ import Experience from './components/pages/Experience'
 import SimpleAppBar from './components/navigation/Navbar'
 import SimpleBottomNavigation from './components/navigation/Footer'
 
-class App extends Component {
 
+class App extends Component {
+  
   render() {
     return (
       <Router>
-        <div className="App">
+        <div>
           <SimpleAppBar />
           <Route exact path="/" render={ () => <Redirect to="/home" /> } />
           <Route exact path="/home" component={HomePage} />
@@ -29,4 +30,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App

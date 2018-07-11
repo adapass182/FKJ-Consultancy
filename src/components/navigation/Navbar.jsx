@@ -5,6 +5,7 @@ import HomeIcon from '@material-ui/icons/Home'
 import {Link} from 'react-router-dom'
 import BackgroundImage from '../Rectangle.png'
 import SimpleMenu from './Menu'
+import logo from '../logo.png'
 
 
 const styles = {
@@ -12,21 +13,24 @@ const styles = {
     flexGrow: 1,
     textAlign: "left",
     fontFamily: 'Aladdin',
-    position: "sticky"
+    position: "sticky",
   },
-  appImg: {
-    backgroundImage: BackgroundImage
-  },
+  img: {
+    backgroundImage: `url(${BackgroundImage})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover"
+  }
 };
 
 function SimpleAppBar(props) {
   const { classes } = props;
   return (
     <div>
-      <AppBar color="inherit" align="center">
+      <AppBar color="inherit" align="center" className={classes.img}>
         <Toolbar className={classes.appImg}>
           <Grid>
-            {<img src="https://i.imgur.com/VnyPDiK.jpg" title="source: imgur.com" height="40" width="40" style={{marginRight: '1em'}}/>}
+            {<img src={logo} title="source: imgur.com" height="40" width="40" style={{marginRight: '1em'}}/>}
           </Grid>
           <Typography className={classes.root} variant="title" color="inherit">
             FKJ Consultancy

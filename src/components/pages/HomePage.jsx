@@ -3,13 +3,15 @@ import PropTypes from 'prop-types'
 
 import { Grid, Paper, withStyles } from '@material-ui/core'
 import {lorem} from '../../loremIpsum'
+import redbck from '../redbck.jpg'
 
 const styles = {
   root: {
     flexGrow: 1,
     position: "sticky",
     marginTop: "4em",
-    marginBottom: "4em"
+    marginBottom: "3em",
+    backgroundImage: `url(${redbck})`
   },
   paper: {
     padding: "1em",
