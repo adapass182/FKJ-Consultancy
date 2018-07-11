@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { AppBar, Button, Grid, Image, Toolbar, Typography, withStyles } from '@material-ui/core'
 import HomeIcon from '@material-ui/icons/Home'
 import {Link} from 'react-router-dom'
-import BackgroundImage from '../Rectangle.png'
+import BackgroundImage from '../redbck.jpg'
 import SimpleMenu from './Menu'
 import logo from '../logo.png'
 
