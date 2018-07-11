@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { AppBar, Button, Grid, Toolbar, Typography, withStyles } from '@material-ui/core'
+import { AppBar, Button, Grid, Image, Toolbar, Typography, withStyles } from '@material-ui/core'
 import HomeIcon from '@material-ui/icons/Home'
 import {Link} from 'react-router-dom'
+import BackgroundImage from '../Rectangle.png'
 
 import SimpleMenu from './Menu'
 
@@ -10,6 +11,9 @@ const styles = {
   root: {
     flexGrow: 1,
     textAlign: "left"
+  },
+  appImg: {
+    backgroundImage: BackgroundImage
   }
 };
 
@@ -18,9 +22,9 @@ function SimpleAppBar(props) {
   return (
     <div className={classes.root}>
       <AppBar position="static" color="inherit" align="center">
-        <Toolbar>
+        <Toolbar className={classes.appImg}>
           <Grid>
-            {<a href="https://imgur.com/VnyPDiK"><img src="https://i.imgur.com/VnyPDiK.jpg" title="source: imgur.com" height="40" width="40" /></a>}
+            {<img src="https://i.imgur.com/VnyPDiK.jpg" title="source: imgur.com" height="40" width="40" style={{marginRight: '1em'}}/>}
           </Grid>
           <Typography className={classes.root} variant="title" color="inherit">
             FKJ Consultancy
