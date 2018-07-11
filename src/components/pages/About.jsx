@@ -4,17 +4,20 @@ import PropTypes from 'prop-types'
 import { Grid, Paper, withStyles } from '@material-ui/core'
 // import {lorem} from '../../loremIpsum'
 
-const styles = theme => ({
+const styles = {
   root: {
     flexGrow: 1,
+    position: "sticky",
+    marginTop: "4em"
   },
   paper: {
     padding: "1em",
     margin: "1em",
     height: "auto",
     width: "auto",
+    fontFamily: "Aladdin"
   },
-})
+}
 
 class About extends React.Component {
 

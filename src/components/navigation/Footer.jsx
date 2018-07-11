@@ -1,19 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Paper, withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-// import RestoreIcon from '@material-ui/icons/Restore';
-// import FavoriteIcon from '@material-ui/icons/Favorite';
-// import LocationOnIcon from '@material-ui/icons/LocationOn';
+import RestoreIcon from '@material-ui/icons/Restore';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
 
-const styles = {
+const footStyle = {
   root: {
     left: "0",
     bottom: "0",
     width: "100%",
     textAlign: "center",
     background: "white",
+    position: "fixed"
   },
 
   icon: {
@@ -42,8 +43,8 @@ class SimpleBottomNavigation extends React.Component {
         className={classes.root}
       >
         <BottomNavigationAction className={classes.icon} label="Something" />
-        <BottomNavigationAction className={classes.icon} label="Something else" />
-        <BottomNavigationAction className={classes.icon} label="Something completely different" />
+        <BottomNavigationAction className={classes.icon} label="Something" />
+        <BottomNavigationAction className={classes.icon} label="Something" />
       </BottomNavigation>
     );
   }
@@ -53,4 +54,4 @@ SimpleBottomNavigation.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(SimpleBottomNavigation);
+export default withStyles(footStyle)(SimpleBottomNavigation);
