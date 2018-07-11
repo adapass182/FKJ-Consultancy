@@ -1,24 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import { Paper, withStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+// import RestoreIcon from '@material-ui/icons/Restore';
+// import FavoriteIcon from '@material-ui/icons/Favorite';
+// import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 const styles = {
   root: {
-    position: "fixed",
     left: "0",
     bottom: "0",
     width: "100%",
     textAlign: "center",
-    background: "black",
+    background: "white",
   },
 
   icon: {
-    color: "white"
+    color: "black"
   }
 };
 

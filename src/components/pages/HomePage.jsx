@@ -1,21 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types'
-// import styles from '../../styles/homePage.css'
 
 import { Grid, Paper, withStyles } from '@material-ui/core'
 import {lorem} from '../../loremIpsum'
 
-const styles = theme => ({
+const styles = {
   root: {
     flexGrow: 1,
+    position: "sticky",
+    marginTop: "4em"
   },
   paper: {
     padding: "1em",
     margin: "1em",
     height: "auto",
     width: "auto",
+    fontFamily: "Aladdin"
   },
-})
+}
 
 class HomePage extends React.Component {
 
@@ -25,8 +27,8 @@ class HomePage extends React.Component {
       return (
             <Grid container className={classes.root} spacing={0}>
               <Grid item xs={12}>
-                <Grid container className={classes.homePage} justify="center" spacing={0}>
-                  {[0, 1, 2].map(value => (
+                <Grid container justify="center" spacing={0}>
+                  {[0, 1, 2, 3, 4, 5, 6].map(value => (
                     <Grid key={value} item>
                       <Paper className={classes.paper}>
                         {lorem}
@@ -41,7 +43,7 @@ class HomePage extends React.Component {
   }
 
   HomePage.propTypes = {
-    classes: PropTypes.object.isRequired
+    styles: PropTypes.object.isRequired
   }
   
   export default withStyles(styles)(HomePage);

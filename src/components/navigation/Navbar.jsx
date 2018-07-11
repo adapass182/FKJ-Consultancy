@@ -11,18 +11,19 @@ const styles = {
   root: {
     flexGrow: 1,
     textAlign: "left",
-    fontFamily: 'Aladdin'
+    fontFamily: 'Aladdin',
+    position: "sticky"
   },
   appImg: {
     backgroundImage: BackgroundImage
-  }
+  },
 };
 
 function SimpleAppBar(props) {
   const { classes } = props;
   return (
-    <div className={classes.root}>
-      <AppBar position="static" color="inherit" align="center">
+    <div>
+      <AppBar color="inherit" align="center">
         <Toolbar className={classes.appImg}>
           <Grid>
             {<img src="https://i.imgur.com/VnyPDiK.jpg" title="source: imgur.com" height="40" width="40" style={{marginRight: '1em'}}/>}
