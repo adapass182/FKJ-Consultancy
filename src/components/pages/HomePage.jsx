@@ -35,10 +35,13 @@ class HomePage extends React.Component {
       const { classes } = this.props
 
       return (
-        <Container fluid style={{ marginTop: "8em" }}>
+        <Container fluid style={{ marginTop: "8em", marginLeft: "6em" }}>
           <Row>
             <Col>
-              <Paper>
+            <Paper style={{ padding: "1em"}}>
+                About Fiona
+              </Paper>
+              <Paper style={{ padding: "1em"}}>
                 {lorem}
               </Paper>
             </Col>
