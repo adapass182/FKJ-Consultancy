@@ -12,7 +12,7 @@ const styles = {
   root: {
     flexGrow: 1,
     height: "6em",
-    position: "sticky"
+    position: "sticky",
   },
   img: {
     // backgroundImage: `url(${BackgroundImage})`,

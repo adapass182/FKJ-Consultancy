@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 
-import { Grid, Paper, withStyles } from '@material-ui/core'
+import { Paper, withStyles } from '@material-ui/core'
 import {lorem} from '../../loremIpsum'
 // import redbck from '../redbck.jpg'
 import profile from '../profile.jpg'
+
+import { Container, Row, Col } from 'react-grid-system';
 
 const styles = {
   root: {
@@ -33,22 +35,20 @@ class HomePage extends React.Component {
       const { classes } = this.props
 
       return (
-            <Grid container className={classes.root} spacing={0}>
-              <Grid item>
-                <Grid container spacing={8}>
-                    <Grid key={"about"} item>
-                      <Paper>
-                        {lorem}
-                      </Paper>
-                    </Grid>
-                    <Grid key={"profile-img"} item>
-                      <Paper>
-                        {<img src={profile} title="fiona-profile" />}
-                      </Paper>
-                    </Grid>
-                </Grid>
-              </Grid>
-            </Grid>
+        <Container fluid style={{ marginTop: "8em" }}>
+          <Row>
+            <Col>
+              <Paper>
+                {lorem}
+              </Paper>
+            </Col>
+            <Col>
+              <Paper style={{float: "right"}}>
+              {<img src={profile} title="fiona-profile" flexGrow="1"/>}
+              </Paper>
+            </Col>
+          </Row>
+        </Container>
       )
     }
   }
