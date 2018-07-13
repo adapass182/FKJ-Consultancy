@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types'
 
 import { Paper, withStyles } from '@material-ui/core'
-import {lorem} from '../../loremIpsum'
+import {about} from '../../loremIpsum'
 // import redbck from '../redbck.jpg'
 import profile from '../profile.jpg'
 
@@ -35,19 +35,17 @@ class HomePage extends React.Component {
       const { classes } = this.props
 
       return (
-        <Container fluid style={{ marginTop: "8em", marginLeft: "6em" }}>
+        <Container fluid style={{ marginTop: "8em", marginLeft: "6em"}}>
           <Row>
             <Col>
-            <Paper style={{ padding: "1em"}}>
+              {<img src={profile} title="fiona-profile"/>}
+            </Col>
+            <Col>
+              <Paper style={{ padding: "1em"}}>
                 About Fiona
               </Paper>
               <Paper style={{ padding: "1em"}}>
-                {lorem}
-              </Paper>
-            </Col>
-            <Col>
-              <Paper style={{float: "right"}}>
-              {<img src={profile} title="fiona-profile" flexGrow="1"/>}
+                {about}
               </Paper>
             </Col>
           </Row>
