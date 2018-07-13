@@ -3,28 +3,28 @@ import PropTypes from 'prop-types'
 
 import { Grid, Paper, withStyles } from '@material-ui/core'
 import {lorem} from '../../loremIpsum'
-import redbck from '../redbck.jpg'
+// import redbck from '../redbck.jpg'
 import profile from '../profile.jpg'
 
 const styles = {
   root: {
     flexGrow: 1,
-    position: "sticky",
-    marginTop: "3.5em",
-    marginBottom: "2em",
+    // position: "sticky",
+    // marginTop: "6em",
+    // marginBottom: "2em",
     // backgroundImage: `url(${redbck})`,
     // backgroundPosition: "center",
     // backgroundRepeat: "no-repeat",
     // backgroundSize: "cover"
   },
-  paper: {
-    flexGrow: 1,
-    margin: "2em",
-    height: "auto",
-    width: "auto",
-    fontFamily: "Aladdin",
-    background: "transparent"
-  }
+  // img: {
+  //   flexGrow: 1,
+  //   margin: "2em",
+  //   height: "auto",
+  //   width: "auto",
+  //   fontFamily: "Aladdin",
+  //   background: "transparent"
+  // }
 }
 
 class HomePage extends React.Component {
@@ -34,10 +34,17 @@ class HomePage extends React.Component {
 
       return (
             <Grid container className={classes.root} spacing={0}>
-              <Grid item xs={12}>
-                <Grid container spacing={0}>
-                    <Grid key={"profile-img0"} item className={classes.paper}>
+              <Grid item>
+                <Grid container spacing={8}>
+                    <Grid key={"about"} item>
+                      <Paper>
+                        {lorem}
+                      </Paper>
+                    </Grid>
+                    <Grid key={"profile-img"} item>
+                      <Paper>
                         {<img src={profile} title="fiona-profile" />}
+                      </Paper>
                     </Grid>
                 </Grid>
               </Grid>
