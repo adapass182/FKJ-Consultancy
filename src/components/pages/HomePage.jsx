@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types'
 
 import { Paper, withStyles } from '@material-ui/core'
-import {lorem} from '../../loremIpsum'
+import { intro, lorem} from '../../webcopy'
 // import redbck from '../redbck.jpg'
 import profile from '../profile.jpg'
 
@@ -38,13 +38,16 @@ class HomePage extends React.Component {
         <Container fluid style={{ marginTop: "8em" }}>
           <Row>
             <Col>
-              <Paper>
-                {lorem}
+            <Paper style={{marginLeft: "8em", padding: "1em"}}>
+                PERSONAL INFO
+              </Paper>
+              <Paper style={{marginLeft: "8em", padding: "1em"}}>
+                {intro}
               </Paper>
             </Col>
             <Col>
-              <Paper style={{float: "right"}}>
-              {<img src={profile} title="fiona-profile" flexGrow="1"/>}
+              <Paper style={{float: "right", marginRight: "8em"}}>
+              {<img src={profile} title="fiona-profile"/>}
               </Paper>
             </Col>
           </Row>

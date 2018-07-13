@@ -9,6 +9,7 @@ import Experience from './components/pages/Experience'
 
 import SimpleAppBar from './components/navigation/Navbar'
 import SimpleBottomNavigation from './components/navigation/Footer'
+import ResponsiveDrawer from './components/navigation/rightBar'
 
 
 class App extends Component {
@@ -17,7 +18,7 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <SimpleAppBar />
+          <ResponsiveDrawer />
           <Route exact path="/" render={ () => <Redirect to="/home" /> } />
           <Route exact path="/home" component={HomePage} />
           <Route exact path="/about" component={About} />
