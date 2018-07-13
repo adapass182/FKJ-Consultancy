@@ -12,10 +12,10 @@ const styles = {
     position: "sticky",
     marginTop: "3.5em",
     marginBottom: "2em",
-    backgroundImage: `url(${redbck})`,
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover"
+    // backgroundImage: `url(${redbck})`,
+    // backgroundPosition: "center",
+    // backgroundRepeat: "no-repeat",
+    // backgroundSize: "cover"
   },
   paper: {
     flexGrow: 1,
@@ -37,21 +37,6 @@ class HomePage extends React.Component {
               <Grid item xs={12}>
                 <Grid container spacing={0}>
                     <Grid key={"profile-img0"} item className={classes.paper}>
-                        {<img src={profile} title="fiona-profile" />}
-                    </Grid>
-                    <Grid key={"profile-img1"} item className={classes.paper}>
-                        {<img src={profile} title="fiona-profile" />}
-                    </Grid>
-                    <Grid key={"profile-img2"} item className={classes.paper}>
-                        {<img src={profile} title="fiona-profile" />}
-                    </Grid>
-                    <Grid key={"profile-img3"} item className={classes.paper}>
-                        {<img src={profile} title="fiona-profile" />}
-                    </Grid>
-                    <Grid key={"profile-img4"} item className={classes.paper}>
-                        {<img src={profile} title="fiona-profile" />}
-                    </Grid>
-                    <Grid key={"profile-img5"} item className={classes.paper}>
                         {<img src={profile} title="fiona-profile" />}
                     </Grid>
                 </Grid>

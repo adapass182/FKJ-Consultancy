@@ -11,16 +11,21 @@ import logo from '../logo.png'
 const styles = {
   root: {
     flexGrow: 1,
-    height: "2em",
-    textAlign: "left",
-    fontFamily: 'Aladdin',
+    height: "6em",
     position: "sticky"
   },
   img: {
-    backgroundImage: `url(${BackgroundImage})`,
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover"
+    // backgroundImage: `url(${BackgroundImage})`,
+    // backgroundPosition: "center",
+    // backgroundRepeat: "no-repeat",
+    // backgroundSize: "cover"
+  },
+  title: {
+    flexGrow: 1,
+    textAlign: "left",
+    textAlignVertical: "center",
+    fontFamily: 'Aladdin',
+    fontWeight: "bold"
   }
 };
 
@@ -28,12 +33,12 @@ function SimpleAppBar(props) {
   const { classes } = props;
   return (
     <div>
-      <AppBar color="inherit" align="center" className={classes.img}>
-        <Toolbar>
+      <AppBar color="inherit" align="center">
+        <Toolbar className={classes.root}>
           <Grid>
             {<img src={logo} title="fkj-logo" height="40" width="40" style={{marginRight: '1em'}}/>}
           </Grid>
-          <Typography className={classes.root} variant="title">
+          <Typography className={classes.title} variant="title">
             FKJ Consultancy
           </Typography>
           <Button component={Link} to="/home" color="inherit">

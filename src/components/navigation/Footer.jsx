@@ -17,10 +17,10 @@ const footStyle = {
     textAlign: "center",
     background: "white",
     position: "fixed",
-    backgroundImage: `url(${redbck})`,
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover"
+    // backgroundImage: `url(${redbck})`,
+    // backgroundPosition: "center",
+    // backgroundRepeat: "no-repeat",
+    // backgroundSize: "cover"
   },
 
   icon: {

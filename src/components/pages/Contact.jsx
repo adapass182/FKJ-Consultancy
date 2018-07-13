@@ -8,7 +8,7 @@ const styles = {
   root: {
     flexGrow: 1,
     position: "sticky",
-    marginTop: "4em"
+    marginTop: "6em"
   },
   paper: {
     padding: "1em",
