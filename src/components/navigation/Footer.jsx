@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { withStyles } from '@material-ui/core/styles'
+import { Link, withStyles } from '@material-ui/core/styles'
 import BottomNavigation from '@material-ui/core/BottomNavigation'
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction'
 import redbck from '../redbck.jpg'
@@ -22,9 +22,9 @@ const footStyle = {
     // backgroundRepeat: "no-repeat",
     // backgroundSize: "cover"
   },
-
   icon: {
-    color: "black"
+    color: "black",
+    colorSecondary: "red"
   }
 };
 
@@ -48,9 +48,9 @@ class SimpleBottomNavigation extends React.Component {
         showLabels
         className={classes.root}
       >
-        <BottomNavigationAction className={classes.icon} label="Something" />
-        <BottomNavigationAction className={classes.icon} label="Something" />
-        <BottomNavigationAction className={classes.icon} label="Something" />
+        <BottomNavigationAction className={classes.icon} label="About" style={{iconActive: {color: "red"}, labelActive: {color: "red"}}} />
+        <BottomNavigationAction className={classes.icon} label="Experience" />
+        <BottomNavigationAction className={classes.icon} label="Contact" />
       </BottomNavigation>
     );
   }

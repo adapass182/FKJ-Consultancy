@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Grid, Paper, withStyles } from '@material-ui/core'
+import { Paper, withStyles } from '@material-ui/core'
 import { Container, Row, Col } from 'react-grid-system'
 
-import {education1, education2, education3, education4} from '../../loremIpsum'
+import { education1, education2, education3, education4 } from '../../loremIpsum'
 
 const styles = {
   root: {
