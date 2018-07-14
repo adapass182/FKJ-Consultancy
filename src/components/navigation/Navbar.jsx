@@ -15,10 +15,10 @@ const styles = {
     position: "sticky",
   },
   img: {
-    // backgroundImage: `url(${BackgroundImage})`,
-    // backgroundPosition: "center",
-    // backgroundRepeat: "no-repeat",
-    // backgroundSize: "cover"
+    backgroundImage: `url(${BackgroundImage})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover"
   },
   title: {
     flexGrow: 1,

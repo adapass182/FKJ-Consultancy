@@ -34,10 +34,31 @@ class HomePage extends React.Component {
       const { classes } = this.props
 
       return (
-        <Container fluid style={{ marginTop: "8em"}}>
+        <Container fluid style={{ marginTop: "8em", marginLeft: "6em", marginRight: "16em"}}>
           <Row>
             <Col>
-              <Paper style={{ padding: "1em"}}>
+              <Paper style={{ padding: "1em", color: "white", backgroundColor: "#dbd8ae", marginBottom: "1em"}}>
+                {bio}
+              </Paper>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Paper style={{ padding: "1em", color: "white", backgroundColor: "#f0b67f", marginBottom: "1em"}}>
+                {bio}
+              </Paper>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Paper style={{ padding: "1em", color: "white", backgroundColor: "#fe5f55", marginBottom: "1em"}}>
+                {bio}
+              </Paper>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Paper style={{ padding: "1em", color: "white", backgroundColor: "#cca43b"}}>
                 {bio}
               </Paper>
             </Col>
