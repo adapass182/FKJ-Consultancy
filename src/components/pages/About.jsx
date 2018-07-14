@@ -2,7 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types'
 
 import { Grid, Paper, withStyles } from '@material-ui/core'
-// import {lorem} from '../../loremIpsum'
+import { Container, Row, Col } from 'react-grid-system'
+
+import {about} from '../../loremIpsum'
+import profile from '../profile.jpg'
+
 
 const styles = {
   root: {
@@ -25,19 +29,21 @@ class About extends React.Component {
       const { classes } = this.props
 
       return (
-        <Grid container className={classes.root} spacing={0}>
-            <Grid item xs={12}>
-                <Grid container className={classes.homePage} justify="center" spacing={0}>
-                    {[0].map(value => (
-                    <Grid key={value} item>
-                        <Paper className={classes.paper}>
-                        About Fiona
-                        </Paper>
-                    </Grid>
-                    ))}
-                </Grid>
-            </Grid>
-      </Grid>
+        <Container fluid style={{ marginTop: "8em"}}>
+          <Row>
+            <Col>
+              <Paper style={{ padding: "1em"}}>
+                About Fiona
+              </Paper>
+              <Paper style={{ padding: "1em"}}>
+                {about}
+              </Paper>
+            </Col>
+            <Col>
+              {<img src={profile} title="fiona-profile"/>}
+            </Col>
+          </Row>
+        </Container>
       )
     }
   }

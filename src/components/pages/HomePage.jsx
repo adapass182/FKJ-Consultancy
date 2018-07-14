@@ -2,11 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types'
 
 import { Paper, withStyles } from '@material-ui/core'
-import {about} from '../../loremIpsum'
+import {bio} from '../../loremIpsum'
 // import redbck from '../redbck.jpg'
-import profile from '../profile.jpg'
 
-import { Container, Row, Col } from 'react-grid-system';
+import { Container, Row, Col } from 'react-grid-system'
 
 const styles = {
   root: {
@@ -35,17 +34,11 @@ class HomePage extends React.Component {
       const { classes } = this.props
 
       return (
-        <Container fluid style={{ marginTop: "8em", marginLeft: "6em"}}>
+        <Container fluid style={{ marginTop: "8em"}}>
           <Row>
             <Col>
-              {<img src={profile} title="fiona-profile"/>}
-            </Col>
-            <Col>
               <Paper style={{ padding: "1em"}}>
-                About Fiona
-              </Paper>
-              <Paper style={{ padding: "1em"}}>
-                {about}
+                {bio}
               </Paper>
             </Col>
           </Row>

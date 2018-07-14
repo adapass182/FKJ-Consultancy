@@ -1,8 +1,10 @@
-import React from 'react';
+import React from 'react'
 import PropTypes from 'prop-types'
 
 import { Grid, Paper, withStyles } from '@material-ui/core'
-// import {lorem} from '../../loremIpsum'
+import { Container, Row, Col } from 'react-grid-system'
+
+import {education1, education2, education3, education4} from '../../loremIpsum'
 
 const styles = {
   root: {
@@ -25,19 +27,21 @@ class Experience extends React.Component {
       const { classes } = this.props
 
       return (
-        <Grid container className={classes.root} spacing={0}>
-            <Grid item xs={12}>
-                <Grid container className={classes.homePage} justify="center" spacing={0}>
-                    {[0, 1, 2].map(value => (
-                    <Grid key={value} item>
-                        <Paper className={classes.paper}>
-                        Fiona's experience
-                        </Paper>
-                    </Grid>
-                    ))}
-                </Grid>
-            </Grid>
-        </Grid>
+        <Container fluid style={{ marginTop: "8em"}}>
+          <Row>
+            <Col>
+              <Paper>
+                Education
+              </Paper>
+              <Paper style={{ padding: "1em"}}>
+                {education1} <br />
+                {education2} <br />
+                {education3} <br />
+                {education4}
+              </Paper>
+            </Col>
+          </Row>
+        </Container>
       )
     }
   }
