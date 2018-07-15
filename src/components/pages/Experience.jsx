@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Paper, withStyles } from '@material-ui/core'
+import { Card, CardContent, CardHeader, Typography, withStyles } from '@material-ui/core'
 import { Container, Row, Col } from 'react-grid-system'
 
 import { education1, education2, education3, education4 } from '../../loremIpsum'
@@ -30,15 +30,15 @@ class Experience extends React.Component {
         <Container fluid style={{ marginTop: "8em"}}>
           <Row>
             <Col>
-              <Paper>
-                Education
-              </Paper>
-              <Paper style={{ padding: "1em"}}>
-                {education1} <br />
-                {education2} <br />
-                {education3} <br />
-                {education4}
-              </Paper>
+              <Card style={{ padding: "1em", margin: "4em" }}>
+                <CardHeader title="Education" />
+                <CardContent>
+                  {education1} <br />
+                  {education2} <br />
+                  {education3} <br />
+                  {education4}
+                </CardContent>
+              </Card>
             </Col>
           </Row>
         </Container>

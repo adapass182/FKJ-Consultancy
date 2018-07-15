@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { AppBar, Button, Grid, Image, Toolbar, Typography, withStyles } from '@material-ui/core'
+import { AppBar, Button, Drawer, Grid, Toolbar, Typography, withStyles } from '@material-ui/core'
 import HomeIcon from '@material-ui/icons/Home'
 import {Link} from 'react-router-dom'
 import BackgroundImage from '../redbck.jpg'
@@ -47,6 +47,11 @@ function SimpleAppBar(props) {
           <SimpleMenu />
         </Toolbar>
       </AppBar>
+      <div style={{ marginTop: "6em"}}>
+        <Drawer anchor="right" variant="permanent">
+          Hi Adam!
+        </Drawer>
+      </div>
     </div>
   );
 }
