@@ -13,6 +13,7 @@ const styles = {
     flexGrow: 1,
     height: "6em",
     position: "sticky",
+    backgroundColor: "#edf2f4"
   },
   img: {
     backgroundImage: `url(${BackgroundImage})`,
@@ -47,11 +48,11 @@ function SimpleAppBar(props) {
           <SimpleMenu />
         </Toolbar>
       </AppBar>
-      <div style={{ marginTop: "6em"}}>
+      {/* <div style={{ marginTop: "6em"}}>
         <Drawer anchor="right" variant="permanent">
           Hi Adam!
         </Drawer>
-      </div>
+      </div> */}
     </div>
   );
 }

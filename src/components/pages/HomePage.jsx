@@ -34,31 +34,31 @@ class HomePage extends React.Component {
       const { classes } = this.props
 
       return (
-        <Container fluid style={{ paddingTop: "6em", paddingLeft: "6em", paddingRight: "16em", backgroundColor: "#544b3d"}}>
+        <Container fluid style={{ paddingTop: "6em", paddingLeft: "6em", paddingRight: "16em", backgroundColor: "#edf2f4"}}>
           <Row>
             <Col>
-              <Paper style={{ padding: "1em", color: "white", backgroundColor: "#dbd8ae", marginBottom: "1em", marginTop: "4em"}}>
+              <Paper style={{ padding: "1em", color: "white", backgroundColor: "#8d99ae", marginBottom: "1em", marginTop: "4em"}}>
                 {bio}
               </Paper>
             </Col>
           </Row>
           <Row>
             <Col>
-              <Paper style={{ padding: "1em", color: "white", backgroundColor: "#f0b67f", marginBottom: "1em"}}>
+              <Paper style={{ padding: "1em", color: "white", backgroundColor: "#8d99ae", marginBottom: "1em"}}>
                 {bio}
               </Paper>
             </Col>
           </Row>
           <Row>
             <Col>
-              <Paper style={{ padding: "1em", color: "white", backgroundColor: "#fe5f55", marginBottom: "1em"}}>
+              <Paper style={{ padding: "1em", color: "white", backgroundColor: "#8d99ae", marginBottom: "1em"}}>
                 {bio}
               </Paper>
             </Col>
           </Row>
           <Row>
             <Col>
-              <Paper style={{ padding: "1em", color: "white", backgroundColor: "#cca43b"}}>
+              <Paper style={{ padding: "1em", color: "white", backgroundColor: "#8d99ae"}}>
                 {bio}
               </Paper>
             </Col>

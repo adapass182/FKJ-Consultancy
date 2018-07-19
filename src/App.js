@@ -19,7 +19,6 @@ class App extends Component {
       <Router>
         <div>
           <SimpleAppBar />
-          {/* <SideBar /> */}
           <Route exact path="/" render={ () => <Redirect to="/home" /> } />
           <Route exact path="/home" component={HomePage} />
           <Route exact path="/about" component={About} />
