@@ -11,9 +11,9 @@ import logo from '../logo.png'
 const styles = {
   root: {
     flexGrow: 1,
-    height: "6em",
+    height: "4em",
     position: "sticky",
-    backgroundColor: "#edf2f4"
+    backgroundColor: "#f7f7f2"
   },
   img: {
     backgroundImage: `url(${BackgroundImage})`,

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 
-import { Paper, withStyles } from '@material-ui/core'
+import { Card, CardContent, Paper, withStyles } from '@material-ui/core'
 import {bio} from '../../loremIpsum'
 // import redbck from '../redbck.jpg'
 
@@ -34,12 +34,12 @@ class HomePage extends React.Component {
       const { classes } = this.props
 
       return (
-        <Container fluid style={{ paddingTop: "6em", paddingLeft: "6em", paddingRight: "16em", backgroundColor: "#edf2f4"}}>
+        <Container fluid style={{ paddingTop: "4em", paddingLeft: "6em", paddingRight: "16em", backgroundColor: "#ffffff"}}>
           <Row>
             <Col>
-              <Paper style={{ padding: "1em", color: "white", backgroundColor: "#8d99ae", marginBottom: "1em", marginTop: "4em"}}>
+              <Card style={{ padding: "1em", color: "black", backgroundColor: "#ffffff", marginBottom: "1em", marginTop: "4em"}}>
                 {bio}
-              </Paper>
+              </Card>
             </Col>
           </Row>
           <Row>
@@ -58,7 +58,7 @@ class HomePage extends React.Component {
           </Row>
           <Row>
             <Col>
-              <Paper style={{ padding: "1em", color: "white", backgroundColor: "#8d99ae"}}>
+              <Paper style={{marginBottom: "4em", padding: "1em", color: "white", backgroundColor: "#8d99ae"}}>
                 {bio}
               </Paper>
             </Col>
