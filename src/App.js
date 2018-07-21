@@ -7,7 +7,6 @@ import About from './components/pages/About'
 import Contact from './components/pages/Contact'
 import Experience from './components/pages/Experience'
 
-import SideBar from './components/navigation/SideBar'
 import SimpleAppBar from './components/navigation/Navbar'
 import SimpleBottomNavigation from './components/navigation/Footer'
 
@@ -19,11 +18,11 @@ class App extends Component {
       <Router>
         <div>
           <SimpleAppBar />
-          <Route exact path="/" render={ () => <Redirect to="/home" /> } />
+          {/* <Route exact path="/" render={ () => <Redirect to="/home" /> } />
           <Route exact path="/home" component={HomePage} />
           <Route exact path="/about" component={About} />
           <Route exact path="/experience" component={Experience} />
-          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/contact" component={Contact} /> */}
           <SimpleBottomNavigation />
         </div>
       </Router>

@@ -5,6 +5,7 @@ import HomeIcon from '@material-ui/icons/Home'
 import {Link} from 'react-router-dom'
 import BackgroundImage from '../redbck.jpg'
 import SimpleMenu from './Menu'
+import SimpleTabs from './Tab'
 import logo from '../logo.png'
 
 
@@ -23,7 +24,7 @@ const styles = {
   },
   title: {
     flexGrow: 1,
-    textAlign: "left",
+    textAlign: "right",
     textAlignVertical: "center",
     fontFamily: 'Aladdin',
     fontWeight: "bold"
@@ -37,22 +38,18 @@ function SimpleAppBar(props) {
       <AppBar color="inherit" align="center">
         <Toolbar className={classes.root}>
           <Grid>
-            {<img src={logo} title="fkj-logo" height="40" width="40" style={{marginRight: '1em'}}/>}
+            {<img src={logo} title="fkj-logo" height="40" width="40" style={{marginRight: '1em', alignSelf: "right"}}/>}
           </Grid>
           <Typography className={classes.title} variant="title">
             FKJ Consultancy
           </Typography>
-          <Button component={Link} to="/home" color="inherit">
+          {/* <Button component={Link} to="/home" color="inherit">
             <HomeIcon />
           </Button>
-          <SimpleMenu />
+          <SimpleMenu /> */}
         </Toolbar>
       </AppBar>
-      {/* <div style={{ marginTop: "6em"}}>
-        <Drawer anchor="right" variant="permanent">
-          Hi Adam!
-        </Drawer>
-      </div> */}
+      <SimpleTabs />
     </div>
   );
 }

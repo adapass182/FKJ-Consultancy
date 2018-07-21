@@ -16,8 +16,8 @@ const footStyle = {
     height: "2em",
     textAlign: "center",
     background: "white",
-    position: "fixed",
-    backgroundColor: "#2b2d42"
+    position: "static",
+    backgroundColor: "#ef233c"
     // backgroundImage: `url(${redbck})`,
     // backgroundPosition: "center",
     // backgroundRepeat: "no-repeat",
